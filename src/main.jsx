@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css'; // Подключение стилей
 
-// Монтирование React-компонента App в элемент с id 'root'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/myapp">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );

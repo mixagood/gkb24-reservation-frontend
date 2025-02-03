@@ -1,87 +1,98 @@
 /* Стили бокового меню */
 .sidebar {
-    width: 212px;
-    height: 100vh;
-    background-color: #2E2E48;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
-    box-sizing: border-box;
-    position: fixed; /* Фиксированное меню слева */
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1000; /* Чтобы меню всегда было поверх фона */
-  }
-  
-  .sidebar-header {
-         text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .logo {
-    width: 140px;
-    height: 90px;
-    object-fit: contain;
-    margin-bottom: 10px;
-  }
-  
-  .sidebar-user {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .profile-photo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .user-name {
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  .sidebar-nav ul {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-  }
-  
-  .sidebar-nav li {
-    text-align: center;
-    margin: 10px 0;
-  }
-  
-  .sidebar-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 10px 0;
-    display: block;
-    transition: color 0.3s;
-  }
-  
-  .sidebar-nav a:hover {
-    color: #007bff;
-  }
-  
-  .sidebar-footer {
-    margin-top: auto; /* Размещаем кнопку выхода внизу */
-  }
-  
-  .logout {
-    text-decoration: none;
-    color: #d9534f;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .logout:hover {
-    color: #c9302c;
-  }
-  
+  background-color: #2e2e48;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 24px 32px;
+  box-sizing: border-box;
+  /* Удаляем фиксированные размеры */
+  width: auto;
+  height: auto;
+  /* Привязка к сетке layout */
+  grid-area: sidebar;
+  gap: 72px;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.sidebar-header {
+  text-align: center;
+}
+
+.logo {
+  width: 140px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.sidebar-user {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-name {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sidebar-nav li {
+  /* margin: 10px 0; */
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: color 0.3s;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.sidebar-nav a:hover {
+  color: #007bff;
+}
+
+.sidebar-footer {
+  /* margin-top: auto; Размещаем кнопку выхода внизу */
+  padding-bottom: 72px;
+  text-align: center;
+  display: block;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logout {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+  text-align: left;
+  display: flex;
+  gap: 12px;
+}
+
+.logout:hover {
+  color: #c9302c;
+}

@@ -1,0 +1,30 @@
+/* UserBookList.css */
+
+.section {
+  width: 100%; /* Растягиваем на всю доступную ширину */
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  margin-bottom: 16px;
+  text-align: left; /* Заголовок остается выровненным по левому краю */
+}
+
+.reservations {
+  display: flex; /* Используем flexbox для горизонтального размещения карточек */
+  flex-wrap: wrap; /* Позволяем перенос на следующую строку, если места недостаточно */
+  gap: 16px; /* Расстояние между карточками */
+}
+
+.reservation-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.empty-message {
+  color: #777;
+  text-align: left; /* Сообщение об отсутствии бронирований выровнено влево */
+}

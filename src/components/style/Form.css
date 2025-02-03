@@ -1,0 +1,46 @@
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  /* font-size: 16px; */
+  margin: 0;
+  padding: 0;
+}
+
+.lineBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.inputBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  /* width: 100%; */
+  flex: 1;
+}
+
+.inputBlock label {
+  font-size: 0.875rem;
+}
+
+.inputBlock input,
+select,
+button {
+  border-radius: 24px;
+  font-size: 1rem;
+  height: 3rem;
+}
+
+.inputBlock,
+.lineBlock button {
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}

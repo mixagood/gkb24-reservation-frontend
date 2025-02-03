@@ -1,0 +1,35 @@
+.searchInput {
+  border-radius: 32px;
+  width: 300px;
+  height: 30px;
+  /* border-color: transparent; */
+}
+
+.searchpanel .bookButton {
+  width: 13 rem;
+  height: 2rem;
+  margin: 0;
+  padding: 5px;
+}
+
+input.current-date {
+  background-color: #fff; /* Светло-серый фон */
+  border-radius: 32px; /* Скруглённые углы */
+  text-align: center; /* Центрируем текст */
+  height: 30px;
+}
+
+.searchpanel {
+  display: flex; /* Включаем Flexbox */
+  gap: 24px; /* Расстояние между элементами */
+  align-items: center; /* Выравнивание элементов по вертикали */
+  justify-content: center;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+select {
+  padding: 0px 16px;
+}

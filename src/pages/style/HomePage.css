@@ -1,0 +1,45 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  overflow: auto; /* Добавляем прокрутку, если содержимое превышает размер */
+}
+
+.dateSelect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 251px;
+  height: 30px;
+}
+
+.dateSelect input {
+  width: 159 px;
+  height: auto;
+  border: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.slideDate {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

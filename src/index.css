@@ -1,0 +1,10 @@
+button {
+  background-color: #0a48ce;
+  color: white;
+  border-radius: 24px; /* Скругленные углы */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
