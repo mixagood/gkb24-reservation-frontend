@@ -6,8 +6,10 @@ import './index.css'; // Подключение стилей
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/myapp">
+    <BrowserRouter basename="/booking">
       <App />
     </BrowserRouter>
   </React.StrictMode>
 );
+
+// basename="/myapp"

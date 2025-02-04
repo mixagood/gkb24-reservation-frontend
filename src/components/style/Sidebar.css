@@ -1,4 +1,3 @@
-/* Стили бокового меню */
 .sidebar {
   background-color: #2e2e48;
   display: flex;
@@ -7,11 +6,6 @@
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   padding: 24px 32px;
   box-sizing: border-box;
-  /* Удаляем фиксированные размеры */
-  width: auto;
-  height: auto;
-  /* Привязка к сетке layout */
-  grid-area: sidebar;
   gap: 72px;
   border-top-right-radius: 32px;
   border-bottom-right-radius: 32px;
@@ -55,10 +49,6 @@
   gap: 32px;
 }
 
-.sidebar-nav li {
-  /* margin: 10px 0; */
-}
-
 .sidebar-nav a {
   text-decoration: none;
   color: #ffffff;
@@ -74,7 +64,6 @@
 }
 
 .sidebar-footer {
-  /* margin-top: auto; Размещаем кнопку выхода внизу */
   padding-bottom: 72px;
   text-align: center;
   display: block;
